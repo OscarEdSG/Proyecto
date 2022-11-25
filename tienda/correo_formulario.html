@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANDAR CORREO - BIKERS MX</title>
+    <link rel="icon" type="image/jpg" href="./img/favicon.png">
+    <link rel="stylesheet" href="css/estilos_correo.css" type="text/css" title="Estilos del formulario" media="screen, print">
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@800&display=swap" rel="stylesheet">
+    <script src="validar_correo.js"></script>
+</head>
+<body>
+    <form action="correo.php" method="post" class="form-register" onsubmit="validar_correo()">
+        <h2 class="form__titulo">MANDAR CORREO</h2>
+        <div class="contenedor-inputs">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-48" >
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="input-48" >
+            <input type="text" id="correo" name="correo" placeholder="Email" class="input-100" >
+            <input type="text" id="comentario" name="asunto" placeholder="Asunto" class="input-100">
+            <input type="text" id="comentario" name="mensaje" placeholder="Mensaje" class="input-comen">
+            <input type="submit" value="Enviar" name="boton" class="btn-enviar"> 
+            <a class="a_1" href="index.html">Regresar</a>
+        </div>
+    </form> 
+</body>
+</html>

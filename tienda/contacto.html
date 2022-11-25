@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO DE REGISTRO - BIKERS MX</title>
+    <link rel="icon" type="image/jpg" href="/tienda/img/favicon.png">
+    <link rel="stylesheet" href="css/estilos_form.css" type="text/css" title="Estilos del formulario" media="screen, print">
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@800&display=swap" rel="stylesheet">
+    <script src="validar.js"></script>
+</head>
+<body>
+    <form action="registrar.php" method="post" class="form-register" onsubmit="validar()">
+        <h2 class="form__titulo">REGÍSTRATE</h2>
+        <div class="contenedor-inputs">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-48" required>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="input-48" required>
+            <input type="text" id="correo" name="correo" placeholder="Email" class="input-100" required>
+            <input type="text" id="usuario" name="usuario" placeholder="Usuario" class="input-48" required>
+            <input type="password" id="clave" name="clave" placeholder="Contraseña" class="input-48" required>
+            <input type="number" id="numero" name="numero" placeholder="Teléfono" class="input-100" required>
+            <input type="text" id="comentario" name="comentario" placeholder="Comentario" class="input-comen">
+            <input type="submit" value="Registrar" name="boton" class="btn-enviar"> 
+            <a class="a_1" href="/tienda.html">Regresar</a>
+            <p>¿Ya tienes una cuenta? <a class="a-contenedor-inputs" href="#">Ingresa aquí</a></p> 
+        </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;	
+	background: #f2f2f2;
+    width: 100%; /* Ancho */
+    background: rgb(37, 19, 19);
+    
+}
+
+
+.limpiar{
+    clear: both;
+}
+
+/* * ============================== */
+/* * ============ HEADER ========== */
+/* * ============================== */
+
+header h1{
+    background: black;
+    color: white;
+    border-radius: 4px;/* Borde redondeado */
+    margin: 0; /* Genera espacios fuera del elemento */
+    padding: 7px 0; /* Genera espacios dentro del elemento */
+    text-align: center; /* La utilizamos para centrar el texto */
+    font-size: 50px; /* Tamaño de letra */
+    text-transform: uppercase; /* Ponen el texto en MAYUSCULAS */
+    text-shadow: 3px 5px rgb(47, 47, 56); /* Letra con sombra */
+    font-weight: both;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+.navbar {
+	background: #FFCD48;
+	position: sticky; /*Lo usamos para mantener fijo nuestro menú*/
+	top: 0; /*Lo colocamos en la parte de arriba PROPIEDAD DE POSITION STICKY*/
+}
+
+.navbar a {
+	color: white;
+	display: inline-block;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	transition: .3s ease-out all;
+    text-transform: uppercase;
+}
+
+.navbar a:hover { 
+	background: #04032e98;
+	color: #fff;
+	text-decoration: none;
+}
+
+.contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+li{
+    list-style: none;
+}
+
+.navbar li{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.navbar a:hover > li{
+    display: block;
+}
+
+
+
+/* * ============================== */
+/* * ============ IMAGEN ========== */
+/* * ============================== */
+.div_imagen{
+    position: relative;
+    float: left;
+    left: 50px;
+    height: 230px;
+    width: 230px;
+}
+.imagen{
+    margin: 30px 0;
+    height: 230px;
+    width: 230px;
+    border-radius: 60%;
+}
+
+/* * ============================== */
+/* * ============ PRIMER SECTION ========== */
+/* * ============================== */
+div, p, h3 {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+.aside_1{
+    background: #FFCD48; /* Color del fondo */
+    display: inline-block;
+    margin: 30px 0px; /* Genera espacios fuera del elemento */
+    padding: 5px 10px; /* Genera espacios dentro del elemento */
+    border: 1px solid #fff; /* Color del borde  */
+    border-radius: 4px; /* Borde redondeado */
+    height: 150px; /* Atura */
+    width: 70%; /* Ancho */
+    position: relative;
+    left: 30px;
+    border-radius: 15px
+}
+
+
+/* * ============================== */
+/* * ============ SEGUNDO SECTION ========== */
+/* * ============================== */
+.aside_2{
+    background: #FFCD48; /* Color del fondo */
+    display: inline-block;
+    margin: 30px 0px; /* Genera espacios fuera del elemento */
+    padding: 5px 10px; /* Genera espacios dentro del elemento */
+    border: 1px solid #fff; /* Color del borde  */
+    border-radius: 4px; /* Borde redondeado */
+    height: 150px; /* Atura */
+    width: 25%; /* Ancho */
+    position: relative;
+    float: left;
+    left: 200px;
+    border-radius: 15px
+}
+
+
+/* * ============================== */
+/* * ============ TERCER SECTION ========== */
+/* * ============================== */
+.aside_3{
+    background: #FFCD48; /* Color del fondo */
+    display: inline-block;
+    margin: 30px 0px; /* Genera espacios fuera del elemento */
+    padding: 5px 10px; /* Genera espacios dentro del elemento */
+    border: 1px solid #fff; /* Color del borde  */
+    border-radius: 4px; /* Borde redondeado */
+    height: 150px; /* Atura */
+    width: 35%; /* Ancho */
+    position: relative;
+    float: right;
+    right: 40px;
+    border-radius: 15px
+}
+
+/* * ============================== */
+/* * ============ SEGUNDO NAV (PROYECTOS) ========== */
+/* * ============================== */
+.menu_proyectos {
+    width: 20%; /* Ancho */
+    height: 195px; /* Atura */
+    background: #FFCD48;
+    float: left;
+    text-align: center;
+    position: relative;
+    top: 70px;
+    right: 520px;
+    font-size: 18px;
+    display: block;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.menu_proyectos a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 7px;
+    display: block;
+    transition: .3s ease-out all;
+}
+
+.menu_proyectos a:hover{
+    background: black;
+    color: white;
+    padding: 7px;
+    display: block;
+    background: #04032e98;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu_proyectos a{
+    text-decoration: none;
+	outline: none;
+}
+
+.div_proyectos, li, a{
+    font-size: 18px;
+}
+
+/* * ============================== */
+/* * ============ FOOTER ========== */
+/* * ============================== */
+footer{
+    background: rgb(0, 0, 0); /* Color del fondo */
+    color: #fff;
+    border-radius: 4px;/* Borde redondeado */
+    margin: 10px 0;
+    padding: 5px 5px 5px;
+    position: relative;
+    top: 54px;
+    text-align: center; /* La utilizamos para centrar el texto */
+    font-size: 15px; /* Tamaño de letra */
+    text-transform: uppercase;
+    font-weight: both;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+

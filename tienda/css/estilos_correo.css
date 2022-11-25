@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url('fondo_correo.jpg');
+    background-size: 100%;
+}
+
+
+.form-register{
+    width: 95%;
+    max-width: 500px;
+    margin: auto; /*Para centar*/
+    background: rgba(255, 255, 255, 0.295);
+    border-radius: 30px;
+    height: 540px; /*Altura*/
+}
+
+.form__titulo{
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 30px; /*Redondea la esquina superior izquierda*/
+    border-top-right-radius: 30px; /*Redondea la esquina superior derecha*/
+    font-family: 'Blinker', sans-serif; /*Se cambia el tipo de letra*/
+}
+
+.contenedor-inputs{
+    padding: 10px 30px;
+    display: flex; /*Para ordenarlos cuadrados, y NO en linea*/
+    /*Propiedades de flex, las 2 de abajo*/
+    flex-wrap: wrap; /*Para forzarlo a que quepa todo en una sola página*/
+    justify-content: space-between; 
+}
+
+input{
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size:  16px;
+    border-radius: 10px;
+    border: 1px solid darkgray;
+}
+
+/*Input chico*/
+.input-48{
+    width: 48%; /*Ancho*/
+}
+
+/*Input grande*/
+.input-100{
+    width: 100%; /*Ancho*/
+}
+
+/*Input comentario*/
+.input-comen{
+    width: 100%; /*Ancho*/
+    height: 120px; /*Altura*/
+}
+
+/*Boton Registrar*/
+.btn-enviar{
+    background: rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
+    margin: auto; /*Par centrarlo*/
+    padding: 10px 40px; /*Para el margen por dentro*/
+    font-size: 20px;
+    border-radius: 7px;
+    cursor: pointer; /*Se usa para el cursor, cambia al dar click*/
+    position: relative;
+    right: 50px;
+    top: 10px;
+}
+
+.btn-enviar:active{
+    transform: scale(1.05); /*Al momento de presionar boton REGISTRAR, se agranda*/
+}
+
+/*Regresar*/
+.a_1{
+    background: black;
+    color: #FFF;
+    margin: 10px 0;
+    padding: 4px;
+    position: relative;
+    right: 50px;
+    border-radius: 7px;
+    font-size: 20px; /*Tamaño de la letra*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    right: 50px;
+    top: 10px;
+    text-decoration: none;
+	outline: none;
+}
+
+p{
+    width: 100%;
+    margin: 7px;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 20px;
+    text-decoration: none;
+	outline: none;
+}
+.a-contenedor-inputs {
+    text-decoration: none;
+	outline: none;
+    color: #FFF;
+}
